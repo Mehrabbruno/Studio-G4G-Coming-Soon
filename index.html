@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="public/assets/fontawesome/css/light.min.css">
+    <link rel="stylesheet" href="public/assets/fontawesome/css/brands.min.css">
+</head>
+<body>
+
+    <iframe
+    class="fullscreen-video"
+    src="https://player.vimeo.com/video/1096205291?h=32819f5b58&autoplay=1&muted=1&controls=0&loop=1"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+  </iframe>
+
+
+    <div class="modal-cta modal-toggle">STUDIO G4G  <i class="fa-light fa-arrow-right"></i></div>
+
+    <div class="modal">
+        <div class="desc">
+            G4G Studio is where big ideas meet thoughtful design. We're a tight-knit team of makers who believe every project—whether it's a website, app, or brand refresh—deserves clarity, creativity, and a human touch. From our first sketch to the final launch, we focus on simple solutions that look great, feel intuitive, and help you grow.
+        </div>
+
+        <div class="links-wrapper">
+            <div><a href="https://geeksforgrowth.com/">GEEKSFORGROWTH.COM</a></div>
+            <div class="close-btn modal-toggle">
+                <i class="fa-light fa-xmark"></i>
+            </div>
+            <div class="social-wrapper">
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.querySelector('.modal');
+        if (!modal) return;
+
+        const toggles = document.querySelectorAll('.modal-toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+            modal.classList.toggle('active');
+            });
+        });
+    });
+
+</script>
+
+</html>
